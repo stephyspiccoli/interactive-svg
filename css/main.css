@@ -5,3 +5,20 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+#eyes {
+  transform-origin: bottom;
+  animation: side 1.5s infinite alternate;
+}
+
+@keyframes side {
+  from {
+
+  transform: translate(20px);
+}
+
+to {
+  transform: translate(-20px);
+}
+
+}
