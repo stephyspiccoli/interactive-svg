@@ -7,18 +7,29 @@ html {
 }
 
 #eyes {
+
   transform-origin: bottom;
   animation: side 1.5s infinite alternate;
 }
 
 @keyframes side {
+
   from {
 
-  transform: translate(20px);
+    transform: translate(20px);
+  }
+
+  to {
+    transform: translate(-20px);
+  }
+
 }
 
-to {
-  transform: translate(-20px);
+#ears {
+
+  transition: all .5s linear;
 }
 
+#bear:hover #ears {
+  transform: translate(0, -20px);
 }
